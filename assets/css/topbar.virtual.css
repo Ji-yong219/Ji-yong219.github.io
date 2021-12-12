@@ -143,8 +143,9 @@
 }
 
 .page-about .img-place {
-  width: 280px;
+  width: 200px;
   height: 350px;
+  height: auto;
   background-color: #dfe0e6;
   overflow: unset;
 }
