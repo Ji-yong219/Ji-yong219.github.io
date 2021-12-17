@@ -476,7 +476,7 @@ a:hover, a:active {
     font-weight: 500;
 }
 
-.progress-wrapper .caption svg{
+.progress-wrapper .caption *{
     height: 50px;
 }
 
