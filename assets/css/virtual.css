@@ -478,6 +478,7 @@ a:hover, a:active {
 
 .progress-wrapper .caption *{
     height: 50px;
+    margin-right: 10px;
 }
 
 .progress {
