@@ -476,6 +476,10 @@ a:hover, a:active {
     font-weight: 500;
 }
 
+.progress-wrapper .caption svg{
+    height: 50px;
+}
+
 .progress {
     margin-top: 5px;
     height: 1.25rem;
