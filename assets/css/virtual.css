@@ -568,19 +568,19 @@ a:hover, a:active {
 
 .theme-list li a:link{
     text-decoration: none;
-    color: balck;
+    color: black;
 }
 .theme-list li a:hover{
     text-decoration: none;
-    color: balck;
+    color: black;
 }
 .theme-list li a:focus{
     text-decoration: none;
-    color: balck;
+    color: black;
 }
 .theme-list li a:active{
     text-decoration: none;
-    color: balck;
+    color: v;
 }
 
 .theme-list li::before {
