@@ -476,6 +476,7 @@ a:hover, a:active {
 .progress-wrapper {
     display: block;
     margin: 10px 0;
+    text-align: center;
 }
 
 .progress-wrapper .caption {
