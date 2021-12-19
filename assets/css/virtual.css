@@ -1134,6 +1134,8 @@ a:hover, a:active {
 .grid-item .img-caption h5 {
     font-size: 18px !important;
     color: white !important;
+  
+    word-break: keep-all;
 }
 
 .grid-item .img-caption p::before {
