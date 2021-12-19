@@ -177,7 +177,7 @@
   left: 0;
   margin: auto;
   width: 2px;
-  height: 95%;
+  height: 98%;
   background-color: #e3e5e9;
 }
 
@@ -185,7 +185,7 @@
   position: relative;
   display: block;
   padding-left: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .timeline li::before {
@@ -219,6 +219,7 @@
 .timeline li .details h5,
 .timeline li .details p {
   margin-bottom: 0;
+  font-family: "에스코어드림3" !important;
 }
 
 .timeline li .details small {

@@ -69,6 +69,12 @@
     font-weight: 500;
     src: url(/assets/fonts/SCDREAM5.OTF) format('woff');
 }
+@font-face {
+    font-family: '에스코어드림3';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/SCDREAM3.OTF) format('woff');
+}
 
 /* 
     1. Basic
