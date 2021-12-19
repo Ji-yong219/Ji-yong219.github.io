@@ -1132,6 +1132,7 @@ a:hover, a:active {
     margin-bottom: 0;
 }
 .grid-item .img-caption h5 {
+    font-size: 18px !important;
     color: white !important;
 }
 
