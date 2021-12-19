@@ -1120,6 +1120,7 @@ a:hover, a:active {
 .grid-item .img-caption {
     position: absolute;
     bottom: 0;
+    bottom: -56px;
     padding: 12px 16px;
     width: 100%;
     background-color: #323131;
@@ -1128,7 +1129,7 @@ a:hover, a:active {
 }
 
 .grid-item .img-caption p {
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 0;
 }
 
