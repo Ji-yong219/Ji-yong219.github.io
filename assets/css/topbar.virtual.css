@@ -150,7 +150,7 @@
   overflow: unset;
 }
 
-.page-about .img-place::before {
+/* .page-about .img-place::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -159,7 +159,7 @@
   height: 100%;
   border: 5px solid #747474;
   z-index: -1;
-}
+} */
 
 .timeline {
   position: relative;
@@ -514,7 +514,7 @@
 }
 
 .theme-red .page-about .img-place::before {
-  border-color: #EF3724;
+  /* border-color: #EF3724; */
 }
 
 .theme-red .timeline li:first-child .title {
