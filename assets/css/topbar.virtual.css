@@ -14,6 +14,11 @@
   border-radius: 40px;
 }
 
+.header-title{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
 /* Filterable button */
 .filterable-button {
   position: relative;
@@ -92,6 +97,7 @@
 .page-home .navbar.floating {
   top: 0;
   background-color: #343a40;
+  background-color: #171925;
 }
 
 .page-home .caption-header {
@@ -150,7 +156,7 @@
   overflow: unset;
 }
 
-.page-about .img-place::before {
+/* .page-about .img-place::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -159,7 +165,7 @@
   height: 100%;
   border: 5px solid #747474;
   z-index: -1;
-}
+} */
 
 .timeline {
   position: relative;
@@ -214,9 +220,14 @@
   margin-top: 8px;
   padding: 20px;
   border-radius: 4px;
+  
+  word-break: keep-all;
+  /* white-space: pre-line; */
 }
 
-.timeline li .details h5,
+.timeline li .details h5{
+  margin: 5px 0;
+}
 .timeline li .details p {
   margin-bottom: 0;
   font-family: "에스코어드림3" !important;
@@ -511,7 +522,7 @@
 }
 
 .theme-red .page-about .img-place::before {
-  border-color: #EF3724;
+  /* border-color: #EF3724; */
 }
 
 .theme-red .timeline li:first-child .title {
