@@ -1132,7 +1132,7 @@ a:hover, a:active {
     margin-bottom: 0;
 }
 .grid-item .img-caption h5 {
-    font-size: 12px !important;
+    color: white !important;
 }
 
 .grid-item .img-caption p::before {
