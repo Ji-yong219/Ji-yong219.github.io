@@ -1128,7 +1128,7 @@ a:hover, a:active {
 }
 
 .grid-item .img-caption p {
-    font-size: 10px;
+    font-size: 10px !important;
     margin-bottom: 0;
 }
 
