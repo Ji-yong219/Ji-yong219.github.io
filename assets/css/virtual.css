@@ -1107,6 +1107,7 @@ a:hover, a:active {
 .portfolio-box .portfolio-item .img-caption{
     flex: 1;
     padding: 15px;
+    margin-left: 15px;
 }
 
 .gridder {
