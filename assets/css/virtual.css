@@ -1086,16 +1086,17 @@ a:hover, a:active {
 
 /* Isotope */
 .portfolio-box .portfolio-item{
-    display: block;
+    display: flex;
     position: relative;
-    height: fit-content;
     margin: 40px auto;
     box-shadow: 2px 4px 3px rgba(100, 100, 100, 0.2), -2px 0px 3px rgba(100, 100, 100, 0.2);
     border-radius: 15px;
 }
 .portfolio-box .portfolio-item img{
-    width: 50%;
-    float: left;
+    flex: 1;
+}
+.portfolio-box .portfolio-item .img-caption{
+    flex: 1;
 }
 
 .gridder {
