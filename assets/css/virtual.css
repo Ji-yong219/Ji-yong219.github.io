@@ -1101,7 +1101,12 @@ a:hover, a:active {
 .portfolio-box .portfolio-item h3{
     font-family: "에스코어드림7";
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 10px;
+}
+.portfolio-box .portfolio-item h6{
+    font-family: "에스코어드림5";
+    text-align: center;
+    padding-bottom: 20px;
 }
 .portfolio-box .portfolio-item .portfolio-container{
     display: flex;
@@ -1121,6 +1126,7 @@ a:hover, a:active {
     flex: 1;
     margin-left: 20px;
   
+    font-family: "에스코어드림3";
     word-break: keep-all;
 }
 .portfolio-box .portfolio-item .img-caption li{
