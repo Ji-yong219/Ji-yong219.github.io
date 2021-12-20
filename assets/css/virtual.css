@@ -1110,7 +1110,7 @@ a:hover, a:active {
     margin-left: 15px;
 }
 .portfolio-box .portfolio-item .img-caption li{
-    margin: 15px auto;
+    margin-bottom: 20px;
 }
 
 .gridder {
