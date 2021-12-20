@@ -63,6 +63,12 @@
 }
 
 /* Korean */
+    @font-face {
+        font-family: '에스코어드림7';
+        font-style: normal;
+        font-weight: 500;
+        src: url(/assets/fonts/SCDREAM7.OTF) format('woff');
+    }
 @font-face {
     font-family: '에스코어드림5';
     font-style: normal;
@@ -1093,6 +1099,7 @@ a:hover, a:active {
     border-radius: 15px;
 }
 .portfolio-box .portfolio-item h4{
+    font-family: "에스코어드림7";
     text-align: center;
     padding: 15px 0;
 }
