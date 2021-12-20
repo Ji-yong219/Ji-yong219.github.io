@@ -1087,7 +1087,7 @@ a:hover, a:active {
 /* Isotope */
 .portfolio-box .portfolio-item{
     position: relative;
-    margin: 30px auto;
+    margin: 40px auto;
     box-shadow: 2px 4px 3px rgba(100, 100, 100, 0.2), -2px 0px 3px rgba(100, 100, 100, 0.2);
     border-radius: 15px;
 }
