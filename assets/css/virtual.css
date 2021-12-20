@@ -1107,6 +1107,8 @@ a:hover, a:active {
 .portfolio-box .portfolio-item .img-caption{
     flex: 1;
     margin-left: 20px;
+  
+    word-break: keep-all;
 }
 .portfolio-box .portfolio-item .img-caption li{
     margin-bottom: 20px;
