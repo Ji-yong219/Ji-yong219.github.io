@@ -1109,6 +1109,9 @@ a:hover, a:active {
     padding: 15px;
     margin-left: 15px;
 }
+.portfolio-box .portfolio-item .img-caption li{
+    margin: 15px auto;
+}
 
 .gridder {
     position: relative;
