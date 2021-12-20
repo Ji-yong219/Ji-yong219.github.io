@@ -1085,12 +1085,10 @@ a:hover, a:active {
 }
 
 /* Isotope */
-.portfolio-box{
-    background: white;
-}
 .portfolio-box .portfolio-item{
     position: relative;
     margin: 40px auto;
+    background: white;
     box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.2), -5px 0px 3px rgba(100, 100, 100, 0.2);
     border-radius: 15px;
 }
