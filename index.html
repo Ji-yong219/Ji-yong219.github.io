@@ -391,6 +391,8 @@
               <img src="../assets/img/project/comment_crawler.png" alt="">
               <ul class="img-caption">
                 <li>Selenium을 활용하여 원하는 기간, 키워드로 검색한 뉴스의 모든 댓글을 수집해주는 크롤러</li>
+                <li>네이버 뉴스는 400페이지, 다음 뉴스는 80페이지로 검색결과를 제한하기 때문에, 1일 간격으로 나누어 크롤링 진행</li>
+                <li>댓글 및 답글까지 모두 수집하며, 세이프 봇에 의해 차단된 내용은 필터링 함</li>
                 <li><b>기술 스택 : </b>Selenium, BeautifulSoup</li>
                 <li><a href="https://github.com/Ji-yong219/news_comment_crawler">Github</a></li>
               </ul>
@@ -417,6 +419,7 @@
               <img src="../assets/img/project/bipartite.png" alt="">
               <ul class="img-caption">
                 <li>원하는 기간, 키워드로 검색한 모든 기사를 수집하고, 자동으로 번역하여 저장해주는 모듈</li>
+                <li>구글 번역 API는 횟수제한이 있기 때문에, 이를 해결하기 위하여 Selenium을 통하여 웹 상에서 동적으로 번역 결과 수집, 최대 글자 5000자 제한이 있기 때문에 끊어서 수집 진행</li>
                 <li><b>기술 스택 : </b>Grequests, BeautifulSoup, Selenium</li>
                 <li><a href="https://github.com/Ji-yong219/news-crawler-for-bipartite-graph">Github</a></li>
               </ul>
@@ -429,6 +432,9 @@
               <img src="../assets/img/project/vui2.png" alt="">
               <ul class="img-caption">
                 <li>웹 기반 음성인식을 통해 여러 리눅스 서버에 간단한 모니터링 및 명령을 내릴 수 있는 웹 애플리케이션</li>
+                <li>JavaScript Speech Recognition library인 Annyang을 활용하여 웹 상에서 음성인식 수행</li>
+                <li>인식된 음성 명령어는 웹소켓을 통해 백엔드로 전송되어 형태소 분석을 통해 수행할 수 있는 명령 목록과 맵핑되어 명령 수행</li>
+                <li>맵핑된 명령은 Socket을 통해 원격 CentOS7에 전달되며, 수행 결과를 받아와 웹상에 출력해줌</li>
                 <li><b>기술 스택 : </b>Flask, WebSocket, JQuery, Annyang, MySQL, Hannanum</li>
               </ul>
             </div>
