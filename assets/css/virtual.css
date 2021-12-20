@@ -1107,7 +1107,7 @@ a:hover, a:active {
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-    padding: 15px;
+    padding: 30px;
 }
 .portfolio-box .portfolio-item img{
     width: 50%;
