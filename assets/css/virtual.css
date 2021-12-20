@@ -1093,7 +1093,7 @@ a:hover, a:active {
 }
 .portfolio-box .portfolio-item h4{
     text-align: center;
-    margin: 15px auto;
+    padding: 15px auto;
 }
 .portfolio-box .portfolio-item .portfolio-container{
     display: flex;
