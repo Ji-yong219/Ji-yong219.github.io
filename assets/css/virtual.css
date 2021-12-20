@@ -1112,7 +1112,9 @@ a:hover, a:active {
 .portfolio-box .portfolio-item img{
     width: 50%;
     flex: 1;
+
     object-fit: contain;
+    object-position: center top;
     /* border-radius: 0 0 0 15px; */
 }
 .portfolio-box .portfolio-item .img-caption{
