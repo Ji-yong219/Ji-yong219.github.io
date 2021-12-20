@@ -63,6 +63,12 @@
 }
 
 /* Korean */
+    @font-face {
+        font-family: '에스코어드림7';
+        font-style: normal;
+        font-weight: 500;
+        src: url(/assets/fonts/SCDREAM7.OTF) format('woff');
+    }
 @font-face {
     font-family: '에스코어드림5';
     font-style: normal;
@@ -125,6 +131,7 @@ a:hover, a:active {
     width: 100%;height: 100%;
     overflow: hidden;
     z-index: 10;
+    border-radius: 15px;
 }
 
 .img-place > img {
@@ -1088,26 +1095,39 @@ a:hover, a:active {
 .portfolio-box .portfolio-item{
     position: relative;
     margin: 40px auto;
-    box-shadow: 2px 4px 3px rgba(100, 100, 100, 0.2), -2px 0px 3px rgba(100, 100, 100, 0.2);
+    background: white;
+    box-shadow: 5px 5px 5px rgba(100, 100, 100, 0.2), -5px 0px 3px rgba(100, 100, 100, 0.2);
     border-radius: 15px;
 }
-.portfolio-box .portfolio-item h4{
+.portfolio-box .portfolio-item h3{
+    font-family: "에스코어드림7";
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0 10px;
+}
+.portfolio-box .portfolio-item h6{
+    font-family: "에스코어드림5";
+    text-align: center;
+    padding-bottom: 20px;
 }
 .portfolio-box .portfolio-item .portfolio-container{
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+    padding: 30px;
 }
 .portfolio-box .portfolio-item img{
     width: 50%;
     flex: 1;
+
+    object-fit: contain;
+    object-position: center top;
+    /* border-radius: 0 0 0 15px; */
 }
 .portfolio-box .portfolio-item .img-caption{
     flex: 1;
     margin-left: 20px;
   
+    font-family: "에스코어드림3";
     word-break: keep-all;
 }
 .portfolio-box .portfolio-item .img-caption li{
