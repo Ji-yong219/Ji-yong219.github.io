@@ -537,12 +537,11 @@
   <script>
     $(window).on('beforeunload', function() {
       $(window).scrollTop(0);
-      new WOW().init();
-  });
+    });
 
-    // $(window).on('load', function(){
-    //   new WOW().init();
-    // });
+    $(window).on('load', function(){
+      new WOW().init();
+    });
   </script>
 </body>
 </html>
