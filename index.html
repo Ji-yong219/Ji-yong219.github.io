@@ -536,10 +536,10 @@
   </script> -->
   <script>
     $(window).on('beforeunload', function() {
-      $(window).scrollTop(0); 
+      $(window).scrollTop(0);
+      new WOW().init();
   });
 
-  new WOW().init();
     // $(window).on('load', function(){
     //   new WOW().init();
     // });
