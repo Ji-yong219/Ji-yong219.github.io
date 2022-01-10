@@ -85,7 +85,7 @@
 /* 
     1. Basic
 */
-
+body, html { overflow-x:hidden; }
 body {
     font-family: '에스코어드림5', 'Quicksand', sans-serif;
     font-weight: 400;
