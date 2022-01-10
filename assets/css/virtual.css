@@ -85,10 +85,6 @@
 /* 
     1. Basic
 */
-.wow {
-    visibility: visible !important;
-}
-
 body {
     font-family: '에스코어드림5', 'Quicksand', sans-serif;
     font-weight: 400;
