@@ -362,6 +362,11 @@
             <ul class="img-caption">
               <li><b>기술 스택 : </b>Python, Flask, OpenCV, JQuery</li>
               <li>이미지를 자동으로 피포페인팅 도안으로 변환해주는 시스템</li>
+              <li>Image Processing 기반의 3 가지 모듈 제작</li>
+              <li>1) Painting : 이미지를 그림처럼 변환해주는 모듈</li>
+              <li>2) Draw Line : 이미지의 색상 경계선을 기준으로 선을 그려주는 모듈</li>
+              <li>3) Numbering : 선 내부에 색상을 추출하여 Color Index Number를 기입해주는 모듈</li>
+              <li>사용자의 작업 편의성을 위해 Flask Framework 기반의 Web Application으로 제작</li>
               <li><b>역할 : </b>Flask, Jquery 등을 활용해 Back-end와 Front-end 구축<br>OpenCV 등을 활용해 Numbering 모듈 개발<br>Painting, Draw Line 모듈 통합</li>
               <li>『피포페인팅 이미지 자동변환방법 및 시스템』 특허 출원<br>『Development of Automatic Conversion System for Pipo Painting Image based on Artificial intelligence』 SCIE 논문 투고<br>졸업 작품 최우수상(1등)<br>2021 우수 창업아이템 선정(교내)</li>
               <li><a href="https://github.com/AutoPipo/EasyPipo">Github</a></li>
@@ -377,7 +382,11 @@
               <img src="../assets/img/project/pdf.png" alt="">
               <ul class="img-caption">
                 <li><b>기술 스택 : </b>Python, Flask, OpenCV, Pandas, Jquery</li>
-                <li>오픈소스 PDF 테이블 추출 라이브러리인 "Camelot-py"를 리팩토링하여 PDF 내의 테이블 데이터를 인식하고, 웹 상에서 영역 수정, 데이터 편집, 엑셀파일 변환을 할 수 있는 웹 애플리케이션</li>
+                <li>PDF 문서에서 테이블을 자동으로 감지하고, 웹 상에서 데이터를 추출 및 가공할 수 있는 Web Application</li>
+                <li>기존 오픈소스 라이브러리 "Camelot-py" Refactoring</li>
+                <li>OpenCV 기반 Image Processing을 통해 Table Detection 성능 개선</li>
+                <li>테이블 데이터를 Excel Sheet에서 가공할 수 있는 기능 제공</li>
+                <li>UX를 반영한 UI 설계를 통해 사용자의 작업 편의성 향상</li>
                 <li><b>역할 : </b>Flask, Jquery 등을 활용해 Back-end와 Front-end 구축<br>UX를 반영한 UI 설계<br>개선된 테이블 인식 모듈 통합<br>Table to Xlsx 모듈 통합</li>
                 <li><a href="https://github.com/TableExtractorPdf/PDF_table_extract">Github</a></li>
               </ul>
@@ -391,10 +400,14 @@
               <img src="../assets/img/project/vui2.png" alt="">
               <ul class="img-caption">
                 <li><b>기술 스택 : </b>Python, Flask, JQuery, MySQL</li>
-                <li>웹 기반 음성인식을 통해 여러 리눅스 서버에 간단한 모니터링 및 명령을 내릴 수 있는 웹 애플리케이션</li>
-                <li>JavaScript Speech Recognition library인 Annyang을 활용하여 웹 상에서 음성인식 수행</li>
-                <li>인식된 음성 명령어는 웹소켓을 통해 백엔드로 전송되어 형태소 분석을 통해 수행할 수 있는 명령 목록과 맵핑되어 명령 수행</li>
-                <li>맵핑된 명령은 Socket을 통해 원격 CentOS7에 전달되며, 수행 결과를 받아와 웹 상에 출력해줌</li>
+                <li>웹 기반 음성인식을 통해 리눅스 서버에 간단한 모니터링 및 명령을 내릴 수 있는 웹 애플리케이션</li>
+                <li>브라우저의 Speech Recognition API를 활용하여 웹 상에서 명령형 음성 인식 수행</li>
+                <li>평소 대기 상태이며, 호출어를 통해 명령모드로 진입 가능하도록 함</li>
+                <li>음성 명령이 인식되면 Web Socket을 통해 백엔드로 전송되며, 형태소 분석을 통해 수행 가능한 명령 목록과 맵핑</li>
+                <li>맵핑된 명령은 리눅스 서버와 Socket 통신을 통해 전달되며, 명령 결과를 받아와 팝업 창에 출력해줌</li>
+                <li>리눅스 서버는 IP, SSH Port, SSH 계정을 통해 자유롭게 등록, 수정, 삭제가 가능하며, 등록된 서버 목록과 실시간 통신 가능 상태를 좌측에 표시함</li>
+                <li>SSH 통신을 통해 서버가 등록되면, 음성 명령을 수행할 수 있는 Socket 클라이언트 모듈과, 통신 환경을 세팅해주는 ShellScript 파일을 전송하여 실행함</li>
+                <li>등록 완료된 서버에 수행 가능한 명령은 사양 정보, 실시간 리소스 모니터링, 로그인 성공&실패 기록 확인, 유저 목록, IP차단목록, MySQL 설치&삭제, MySQL 백업&복구, 서버 보안 점검 등이 있음</li>
               </ul>
             </div>
           </div>
@@ -406,7 +419,12 @@
               <img src="../assets/img/project/gopansa.png" alt="">
               <ul class="img-caption">
                 <li><b>기술 스택 </b>: Python, Flask, OpenCV, MySQL, JQuery</li>
-                <li>딥러닝을 통해 고기의 육질 등급 위조 방지와 등급 측정을 할 수 있는 웹 애플리케이션</li>
+                <li>소고기 및 돼지고기 이미지를 통해 자동으로 육질 등급을 측정해주는 Flask 기반 Web Application</li>
+                <li>공공데이터 육류 이미지 7만장을 활용하여 Pytorch 기반 딥러닝 모델 구축</li>
+                <li>컴퓨터와 휴대폰 모두 서비스 가능하도록 별도의 UI 스타일 구축</li>
+                <li>육질 측정 정보를 라벨로 생성하여 출력 및 다운로드 가능하도록 개발</li>
+                <li>축산 업자 대상, 멤버쉽 결제 기능을 서비스하여 수익 구조 설계</li>
+                <li>GPS 기반, 현위치 주변의 멤버쉽 가입 업체 표시</li>
                 <li><b>역할 : </b>Flask, Jquery 등을 활용해 Back-end와 Front-end 구축<br>딥러닝 판정 모듈 통합<br>라벨 출력 및 결제 모듈 통합</li>
                 <li>2021년 충북 공공데이터 활용 창업경진대회 최우수상</li>
                 <li><a href="https://github.com/DBLabProj/GoPansa">Github</a></li>
@@ -421,7 +439,12 @@
               <img src="../assets/img/project/corona_app.png" alt="">
               <ul class="img-caption">
                 <li><b>기술 스택 : </b>Java, SQLite</li>
-                <li>실시간 위치 추적을 통해 사용자의 이동 동선을 저장하고, 확진자 방문 장소와 동선이 겹칠 시 확인할 수 있는 안드로이드 애플리케이션</li>
+                <li>실시간 위치 추적을 통해 사용자의 동선을 저장하고, 확진자 방문 장소와 동선이 겹칠 시 확인할 수 있는 안드로이드 애플리케이션</li>
+                <li>30초마다 GPS를 통해 사용자의 위도와 경도를 받아와, 사용자 기기 로컬 DB에 저장함</li>
+                <li>지자체 홈페이지에 게시된 확진자 방문 장소 정보를 30분마다 크롤링하여 사용자 기기 로컬 DB에 저장함</li>
+                <li>Location 화면에서 사용자 동선, 확진자 방문 장소를 Naver Map API를 이용하여 표시해주며, 동선의 장소가 오차 15m로 겹치면 같은 장소로 판단, 시간 값만 증가시킴, 확진자 방문 장소는 반지름 15m의 붉은 반투명 원으로 표현함</li>
+                <li>Path history 화면에서 지난 동선 기록을 시간대 별로 표 형식으로 확인할 수 있으며, 확진자 방문 장소와 겹친 부분을 하이라이트 표시해줌</li>
+                <li>유클리드 거리 알고리즘을 사용하여 15m 이내에 들면 겹쳤다고 판단하였으며, 장소는 Geocoder API를 이용하여 위도&경도를 주소로 변환하여 표기함</li>
                 <li><b>역할 : </b>Back-end와 Front-end 구축<br>포어그라운드로 실시간 GPS 위치를 받아 날짜&시간 별 DB에 저장<br>Naver Map API에 경로 및 확진 장소 표시<br>Geocoder API를 활용해 방문 장소 표시<br>지자체 홈페이지에서 확진자 방문 장소 크롤링</li>
                 <li><a href="https://github.com/Ji-yong219/corona_foot_traffic_app">Github</a></li>
               </ul>
@@ -436,6 +459,8 @@
               <ul class="img-caption">
                 <li><b>기술 스택 : </b>Python, Flask, MySQL, JQuery</li>
                 <li>교내 사진동아리 온라인 전시회를 위한 웹 플랫폼</li>
+                <li>작품 사진 및 부원 사진, FAQ 등 정보 확인을 위한 정적 웹</li>
+                <li>관리자가 웹에 게시되는 정보를 추가, 삭제, 수정할 수 있도록 관리자 페이지 구축</li>
                 <li><b>역할 : </b>Flask, Jquery 등을 활용해 Back-end와 Front-end 구축</li>
                 <li><a href="https://github.com/Minku-Koo/PhotoClub">Github</a></li>
               </ul>
@@ -479,7 +504,11 @@
               <img src="../assets/img/project/jandy.png" alt="">
               <ul class="img-caption">
                 <li><b>기술 스택 : </b>Python, Flask, SQLite, JQuery</li>
-                <li>Flask, MySQL 등을 활용해 타임라인 게시판을 구축했으며 회원가입·로그인 및 좋아요, 댓글·답글 기능 구현</li>
+                <li>웹 개발 학습을 목적으로 진행한 Flask 기반 타임라인 형식의 웹 게시판</li>
+                <li>회원가입, 로그인, 비밀번호 찾기 등 회원 관리 시스템</li>
+                <li>게시글 작성 및 좋아요, 댓글, 답글 기능</li>
+                <li>본인이 작성한 글, 댓글에 대한 수정, 삭제 기능</li>
+                <li>최신 글부터 보이게 되며, 스크롤을 내릴 때 마다 글 10개씩 불러와 출력</li>
                 <li><a href="https://github.com/Ji-yong219/jandy">Github</a></li>
               </ul>
             </div>
