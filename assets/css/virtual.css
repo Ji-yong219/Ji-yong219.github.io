@@ -1121,6 +1121,7 @@ a:hover, a:active {
 .portfolio-box .portfolio-item .img-box img{
     display: block;
     width: 100%;
+    margin-bottom: 5px;
 }
 .portfolio-box .portfolio-item .img-caption{
     flex: 1;
