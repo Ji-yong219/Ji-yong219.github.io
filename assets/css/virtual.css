@@ -1114,13 +1114,13 @@ a:hover, a:active {
 	flex-wrap: nowrap;
     padding: 30px;
 }
-.portfolio-box .portfolio-item img{
+.portfolio-box .portfolio-item .img-box{
     width: 50%;
     flex: 1;
-
-    object-fit: contain;
-    object-position: center top;
-    /* border-radius: 0 0 0 15px; */
+}
+.portfolio-box .portfolio-item .img-box img{
+    display: block;
+    width: 100%;
 }
 .portfolio-box .portfolio-item .img-caption{
     flex: 1;
