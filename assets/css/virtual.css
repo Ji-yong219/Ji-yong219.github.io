@@ -1118,7 +1118,7 @@ a:hover, a:active {
     width: 50%;
     flex: 1;
 }
-.portfolio-box .portfolio-item .img-box img{
+.portfolio-box .portfolio-item .img-box img,iframe{
     display: block;
     width: 100%;
     margin-bottom: 5px;
