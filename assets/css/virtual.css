@@ -1109,6 +1109,7 @@ a:hover, a:active {
     padding-bottom: 20px;
 }
 .portfolio-box .portfolio-item .portfolio-container{
+    position: relative;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
