@@ -50,43 +50,6 @@
     }
   </style>
   <!--   CSS End -->
-
-  <!--   Javascript Start -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-  <script>
-    const setMoonRotation = percent => {
-      $('.moon').css('boxShadow', `0 0 30px ${percent / 3.3}px #FFE05D`)
-      if (percent < 50) {
-        $('.moon #leftShadow').attr(
-          'd',
-          `M 0 100 A 100 ${100 - percent*2} 0 0 1 200 100 L 100 110 Z`
-        )
-        $('.moon #rightShadow').attr('rx', 0)
-      } else {
-        $('.moon #leftShadow').attr(
-          'd',
-          `M 0 100 A 100 0 0 0 1 000 100 L 100 100 Z`
-        )
-        $('.moon #rightShadow').attr('rx', (percent*2) - 100)
-      }
-    }
-    
-    
-    
-    $(() => {
-      $(window).on("scroll", function () {
-        const windowScrollTop = $(window).scrollTop()
-        const height = $(document).height() - $(window).height()
-        const percent = Math.floor(windowScrollTop / height * 100)
-        setMoonRotation(percent)
-      });
-      let windowScrollTop = $(window).scrollTop()
-      let height = $(document).height() - $(window).height()
-      let percent = Math.floor(windowScrollTop / height * 100)
-      setMoonRotation(0)
-    })
-  </script>
-  <!--   Javascript End -->
 </head>
 <body class="theme-red">
   
@@ -790,7 +753,44 @@
 
   <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script> -->
   
+
+  <!--   Javascript Start -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
   <script>
+    const setMoonRotation = percent => {
+      $('.moon').css('boxShadow', `0 0 30px ${percent / 3.3}px #FFE05D`)
+      if (percent < 50) {
+        $('.moon #leftShadow').attr(
+          'd',
+          `M 0 100 A 100 ${100 - percent*2} 0 0 1 200 100 L 100 110 Z`
+        )
+        $('.moon #rightShadow').attr('rx', 0)
+      } else {
+        $('.moon #leftShadow').attr(
+          'd',
+          `M 0 100 A 100 0 0 0 1 000 100 L 100 100 Z`
+        )
+        $('.moon #rightShadow').attr('rx', (percent*2) - 100)
+      }
+    }
+    
+    
+    
+    $(() => {
+      $(window).on("scroll", function () {
+        const windowScrollTop = $(window).scrollTop()
+        const height = $(document).height() - $(window).height()
+        const percent = Math.floor(windowScrollTop / height * 100)
+        setMoonRotation(percent)
+      });
+      let windowScrollTop = $(window).scrollTop()
+      let height = $(document).height() - $(window).height()
+      let percent = Math.floor(windowScrollTop / height * 100)
+      setMoonRotation(0)
+    })
+
+
+    
     // $(window).on('beforeunload', function() {
     //   $(window).scrollTop(0);
     // });
@@ -812,5 +812,6 @@
   );
   wow.init();
   </script>
+  <!--   Javascript End -->
 </body>
 </html>
