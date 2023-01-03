@@ -55,14 +55,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     const setMoonRotation = percent => {
-      let deg = percent * 1.8
-      console.log(percent, deg)
-
-      $('.moon').css('boxShadow', `0 0 30px ${deg / 6 - 5}px #FFE05D`)
-      if (deg < 100) {
+      $('.moon').css('boxShadow', `0 0 30px ${percent / 3.3}px #FFE05D`)
+      if (percent < 50) {
         $('.moon #leftShadow').attr(
           'd',
-          `M 0 100 A 100 ${100 - deg} 0 0 1 200 100 L 100 110 Z`
+          `M 0 100 A 100 ${100 - percent*2} 0 0 1 200 100 L 100 110 Z`
         )
         $('.moon #rightShadow').attr('rx', 0)
       } else {
@@ -70,7 +67,7 @@
           'd',
           `M 0 100 A 100 0 0 0 1 000 100 L 100 100 Z`
         )
-        $('.moon #rightShadow').attr('rx', deg - 100)
+        $('.moon #rightShadow').attr('rx', percent)
       }
     }
     
