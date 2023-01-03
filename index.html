@@ -92,14 +92,14 @@
   <svg
         className="moon"
         viewBox="0 0 200 200"
-        style={{
-          width: '100%',
-          height: '100%',
-          backgroundImage: `url(${moon_grey})`,
-          backgroundSize: 'contain',
-          borderRadius: '50%',
-          boxShadow: '0 0 30px 30px #FFE05D',
-        }}
+        style="
+          width: '100%';
+          height: '100%';
+          background-image: 'url(../assets/img/moon.png)';
+          background-size: 'contain';
+          border-radius: '50%';
+          box-shadow: '0 0 30px 30px #FFE05D';
+        "
       >
         <defs>
           <pattern
@@ -108,7 +108,7 @@
             width="100%"
             height="100%"
           >
-            <image href={moon_image} x="0" y="0" width="100%" height="100%" />
+            <image href="/assets/img/moon.png" x="0" y="0" width="100%" height="100%" />
           </pattern>
           <pattern
             id="img2"
@@ -117,7 +117,7 @@
             height="100%"
           >
             <image
-              href={moon_grey}
+              href="/assets/img/moon_grey.png"
               x="0"
               y="0"
               width="100%"
@@ -148,7 +148,7 @@
         </defs>
         <image
           mask="url(#mask)"
-          xlinkHref={moon_image}
+          xlinkHref="/assets/img/moon.png"
           width="100%"
           height="100%"
         ></image>
