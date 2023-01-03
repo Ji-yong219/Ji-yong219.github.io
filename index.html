@@ -817,30 +817,30 @@
     
     
     $(() => {
-      $("body").addClass("loaded");
+      $("#project").addClass("loaded");
 
-      let windowWidth = $("body").width();
-      let windowHeight = $("body").height();
+      let windowWidth = $("#project").width();
+      let windowHeight = $("#project").height();
 
-      for(let i = 0; i < 15000; i++) {
+      for(let i = 0; i < 5000; i++) {
         let toLeft = Math.round(Math.random() * windowWidth);
         let toTop = Math.round((Math.random() * windowHeight));
 
         $("<div/>")
         .addClass("star-sm")
         .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
-        .appendTo("body");
+        .appendTo("#project");
 
         if(i % 5 == 0) {
           $("<div/>")
           .addClass("star-md")
           .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
-          .appendTo("body");
+          .appendTo("#project");
         } else if(i % 25 == 0) {
           $("<div/>")
           .addClass("star-lg")
           .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
-          .appendTo("body");
+          .appendTo("#project");
         }
       }
 
