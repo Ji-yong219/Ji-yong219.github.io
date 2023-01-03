@@ -75,16 +75,18 @@
     
     
     
-    $(window).on("scroll", function () {
-      const windowScrollTop = $(window).scrollTop()
-      const height = $(document).height() - $(window).height()
-      const percent = Math.floor(windowScrollTop / height * 100)
-      setMoonRotation(percent)
-    });
-    let windowScrollTop = $(window).scrollTop()
-    let height = $(document).height() - $(window).height()
-    let percent = Math.floor(windowScrollTop / height * 100)
-    setMoonRotation(0)
+    $(() => {
+      $(window).on("scroll", function () {
+        const windowScrollTop = $(window).scrollTop()
+        const height = $(document).height() - $(window).height()
+        const percent = Math.floor(windowScrollTop / height * 100)
+        setMoonRotation(percent)
+      });
+      let windowScrollTop = $(window).scrollTop()
+      let height = $(document).height() - $(window).height()
+      let percent = Math.floor(windowScrollTop / height * 100)
+      setMoonRotation(0)
+    })
   </script>
   <!--   Javascript End -->
 </head>
