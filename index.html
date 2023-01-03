@@ -414,7 +414,7 @@
           </ul>
         </div>
         <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-          <h2 class="fw-normal">Project</h2>
+          <h2 style="color: rgb(255, 196, 0)" class="fw-normal">Project</h2>
           <ul class="timeline mt-4 pr-md-5">
             <li>
               <div class="title">2022.12.</div>
@@ -817,9 +817,9 @@
     let windowWidth = $("#project").width();
     let windowHeight = $("#project").height();
 
-    for(let i = 0; i < 2000; i++) {
+    for(let i = 0; i < 3000; i++) {
       let toLeft = Math.round(Math.random() * windowWidth);
-      let toTop = Math.round((Math.random() * windowHeight) / 2);
+      let toTop = Math.round((Math.random() * windowHeight));
 
       $("<div/>")
       .addClass("star-sm")
