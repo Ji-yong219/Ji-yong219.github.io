@@ -814,28 +814,28 @@
       }
     }
 
-    let windowWidth = $("#project").width();
-    let windowHeight = $("#project").height();
+    let windowWidth = $("body").width();
+    let windowHeight = $("body").height();
 
-    for(let i = 0; i < 3000; i++) {
+    for(let i = 0; i < 25000; i++) {
       let toLeft = Math.round(Math.random() * windowWidth);
       let toTop = Math.round((Math.random() * windowHeight));
 
       $("<div/>")
       .addClass("star-sm")
       .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
-      .appendTo("#project");
+      .appendTo("body");
 
       if(i % 5 == 0) {
         $("<div/>")
         .addClass("star-md")
         .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
-        .appendTo("#project");
+        .appendTo("body");
       } else if(i % 25 == 0) {
         $("<div/>")
         .addClass("star-lg")
         .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
-        .appendTo("#project");
+        .appendTo("body");
       }
     }
     
