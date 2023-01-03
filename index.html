@@ -79,8 +79,8 @@
       background: -o-linear-gradient(bottom,rgba(10,20,20,1),rgba(0,16,54,0.9)); /*Opera 11.1-12*/
       background: -moz-linear-gradient(bottom,rgba(10,20,20,1),rgba(0,16,54,0.9)); /*Fx 3.6-15*/
       background: linear-gradient(to bottom, rgba(10,20,20,1),rgba(0,16,54,0.9)); /*Standard*/
-      }
-      @keyframes loading{
+    }
+    @keyframes loading{
       0%{
         opacity: 0;
       }
@@ -817,32 +817,32 @@
     let windowWidth = $(window).width();
     let windowHeight = $(window).height();
 
-    for(let i=0; i<500; i++){
-      let toLeft = Math.round(Math.random()*windowWidth);
-      let toTop = Math.round((Math.random()*windowHeight)/2);
+    for(let i = 0; i < 500; i++) {
+      let toLeft = Math.round(Math.random() * windowWidth);
+      let toTop = Math.round((Math.random() * windowHeight) / 2);
 
       $("<div/>")
       .addClass("star-sm")
-      .attr("style","top : "+toTop+"px; left: "+toLeft+"px;")
-      .appendTo("#lower");
+      .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
+      .appendTo("#project");
 
-      if(i%5==0){
+      if(i % 5 == 0) {
         $("<div/>")
         .addClass("star-md")
-        .attr("style","top : "+toTop+"px; left: "+toLeft+"px;")
-        .appendTo("#lower");
-      }else if(i%25==0){
+        .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
+        .appendTo("#project");
+      } else if(i % 25 == 0) {
         $("<div/>")
         .addClass("star-lg")
-        .attr("style","top : "+toTop+"px; left: "+toLeft+"px;")
-        .appendTo("#lower");
+        .attr("style", `top : ${toTop}px; left: ${toLeft}px;`)
+        .appendTo("#project");
       }
     }
     
     
     
     $(() => {
-      $("#portfolio_article").addClass("loaded");
+      $("#project").addClass("loaded");
 
       $(window).on("scroll", function () {
         const windowScrollTop = $(window).scrollTop()
