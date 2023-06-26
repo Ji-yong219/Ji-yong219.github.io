@@ -261,7 +261,7 @@ a:hover, a:active {
 }
 
 /* Back to top */
-.btn-back_to_top {
+.btn-back_to_top_old {
     position: fixed;
     bottom: 10px;
     right: 14px;
